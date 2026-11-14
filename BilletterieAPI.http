@@ -1,0 +1,6 @@
+@BilletterieAPI_HostAddress = http://localhost:5106
+
+GET {{BilletterieAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
