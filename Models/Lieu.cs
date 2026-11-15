@@ -3,14 +3,19 @@ using System.ComponentModel.DataAnnotations;
 namespace BilletterieAPI.Models
 {
     public class Lieu
-    {
+    {   
+
+        [Key]
         public int LieuId { get; set; }
         [Required]
-        public string Nom { get; set; }
-        [Required]
-        public string Adresse { get; set; }
-        public int Capacite { get; set; }
+        [StringLength(20)]
 
-        public ICollection<Evenement>? Evenements { get; set; }
+        public string Nom { get; set; }
+              
+         [Required]
+        public string Adresse { get; set; }
+
+
+        public ICollection<Evenement> Evenements { get; set; }
     }
 }

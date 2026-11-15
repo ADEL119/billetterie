@@ -17,10 +17,8 @@ namespace BilletterieAPI.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            // Précision pour le type decimal (Tarif)
-            builder.Entity<TypeBillet>()
-                .Property(t => t.Tarif)
-                .HasColumnType("decimal(18,2)");
+            
+        
         }
     }
 }

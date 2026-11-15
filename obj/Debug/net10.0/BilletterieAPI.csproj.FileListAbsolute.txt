@@ -170,3 +170,4 @@ F:\IIT\2EME(ING)\.NET\examen\BilletterieAPI\obj\Debug\net10.0\refint\Billetterie
 F:\IIT\2EME(ING)\.NET\examen\BilletterieAPI\obj\Debug\net10.0\BilletterieAPI.pdb
 F:\IIT\2EME(ING)\.NET\examen\BilletterieAPI\obj\Debug\net10.0\BilletterieAPI.genruntimeconfig.cache
 F:\IIT\2EME(ING)\.NET\examen\BilletterieAPI\obj\Debug\net10.0\ref\BilletterieAPI.dll
+F:\IIT\2EME(ING)\.NET\examen\BilletterieAPI\obj\Debug\net10.0\BilletterieAPI.sourcelink.json
