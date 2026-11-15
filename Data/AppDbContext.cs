@@ -1,10 +1,9 @@
 using BilletterieAPI.Models;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace BilletterieAPI.Data
 {
-    public class AppDbContext : IdentityDbContext<ApplicationUser>
+    public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
@@ -17,6 +16,10 @@ namespace BilletterieAPI.Data
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+            // pour éviter le warning de précision pour le type decimal
+            builder.Entity<TypeBillet>()
+        .Property(t => t.Tarif)
+        .HasPrecision(18, 2);
             
         
         }

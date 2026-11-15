@@ -13,11 +13,9 @@ namespace BilletterieAPI.Models
         public int QuantiteAchetee { get; set; }
 
        
-       
         public int TypeBilletId { get; set; }
         public TypeBillet TypeBillet { get; set; }
 
-       
         public int SpectateurId { get; set; }
         public Spectateur Spectateur { get; set; }
     }
