@@ -9,5 +9,7 @@ namespace BilletterieAPI.Repositories
         Task<Evenement> AddEvenement(Evenement evenement);
         Task<Evenement> UpdateEvenement(Evenement evenement);
         Task<Evenement> DeleteEvenement(int evenementId);
+        Task<IEnumerable<Evenement>> GetEvenementsByDate(DateTime date);
+        Task<IEnumerable<Evenement>> GetEvenementsByLieu(int lieuId);
     }
 }

@@ -47,5 +47,22 @@ namespace BilletterieAPI.Repositories
             }
             return evenement;
         }
+        // Recherche simple par date
+        public async Task<IEnumerable<Evenement>> GetEvenementsByDate(DateTime date)
+        {
+            return await _context.Evenements
+                .Include(e => e.Lieu)
+                .Where(e => e.DateEvenement.Date == date.Date)
+                .ToListAsync();
+        }
+
+        // Recherche simple par lieu
+        public async Task<IEnumerable<Evenement>> GetEvenementsByLieu(int lieuId)
+        {
+            return await _context.Evenements
+                .Include(e => e.Lieu)
+                .Where(e => e.LieuId == lieuId)
+                .ToListAsync();
+        }
     }
 }

@@ -44,8 +44,13 @@ namespace BilletterieAPI
             // HTTP pipeline
             app.UseHttpsRedirection();
 
-            app.UseAuthentication();
-            app.UseAuthorization();
+
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+ .AddEntityFrameworkStores<AppDbContext>();
+app.UseAuthentication();
+app.UseAuthorization();
+
+           
 
             app.MapControllers();
 
