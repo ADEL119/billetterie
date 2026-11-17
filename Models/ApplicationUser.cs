@@ -4,5 +4,7 @@ namespace BilletterieAPI.Models
 {
     public class ApplicationUser : IdentityUser
     {
+        
+       
     }
 }

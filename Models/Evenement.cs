@@ -15,6 +15,8 @@ namespace BilletterieAPI.Models
         public int LieuId { get; set; }
         public Lieu Lieu { get; set; }
 
+        
+
         public ICollection<TypeBillet> TypeBillets { get; set; }
     }
 }

@@ -19,6 +19,8 @@ namespace BilletterieAPI.Models
 
         public string Email { get; set; }
 
+       
+
         public ICollection<Achat> Achats { get; set; }  = new List<Achat>(); //éviter null exception
     }
 }

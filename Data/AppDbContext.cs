@@ -22,6 +22,8 @@ namespace BilletterieAPI.Data
             builder.Entity<TypeBillet>()
         .Property(t => t.Tarif)
         .HasPrecision(18, 2);
+
+        
             
         
         }
